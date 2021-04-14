@@ -118,12 +118,13 @@ html{
 	display: flex;
 	justify-content: center;
 	margin-top: 150px;
-	.title_text{
+	h1{
 		font-size: 100px;
 		color: #fff;
 		font-weight: 600;
 		line-height: 150px;
 		width: 380px;
+		margin: 0;
 	}
 	
 }
@@ -138,5 +139,42 @@ html{
 		line-height: 38px;
 		font-weight: 600;
 		color: #fff;
+	}
+}
+//--------------------------------About-----------------------------------
+.about{
+	background-color: $grey;
+	padding: 110px 0;
+}
+.about_title{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	h2{
+		font-size: 48px;
+		font-weight: 600;
+		margin-bottom: 80px;
+	}
+}
+.about_items{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+	.item{
+		max-width: 340px;
+		text-align: center;
+	}
+	.item_icon{
+		height: 85px;
+
+	}
+	.item_title{
+		font-size: 24px;
+		font-weight: 500;
+		padding: 40px 0 30px 0;
+	}
+	.item_text{
+		line-height: 24px;
 	}
 }
