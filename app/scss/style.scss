@@ -1,0 +1,142 @@
+@import "fonts";
+@import "libs";
+
+$green: #658909;
+$black: #363635;
+$grey: #EEEEEE;
+
+html{
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	
+}
+ul,
+li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html, body{
+	font-family: 'FiraSans-Regular', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: $black;
+}
+body{
+	overflow-x: hidden;
+	
+}
+html{
+	position: relative;
+}
+.container{
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+//---------------------------------Start Header --------------------------
+.header{
+	width: 100%;
+	height: 955px;
+	background-image: url('../images/bg.jpg');
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.header_top{
+	padding-top: 40px;
+	display: flex;
+	justify-content: flex-end;
+	height: 55px;
+	width: 100%;
+}
+.header_socials{
+	display: flex;
+	justify-content: space-between;
+	max-width: 640px;
+	align-items: center;
+	height: 55px;
+}
+.socials_email,.socials_phone,.socials_telegram{
+	padding-right: 70px;
+	position: relative;
+
+	&::before{
+			content: "";
+			position: absolute;
+			width: 24px;
+			height: 24px;
+			border: none;
+			top: 0px;
+			left: -30px;
+		}
+	a{
+		color: $black;
+		transition: all 0.3s;
+		&:hover{
+			color: #8d8d8d;
+		}
+	}
+}
+.socials_email::before{
+		background-image: url('../images/Mail_white.png');
+}
+.socials_phone::before{
+		background-image: url('../images/Phone_white.png');
+}
+.socials_telegram::before{
+		background-image: url('../images/Telegram_white.png');
+}
+.btn{
+	text-transform: uppercase;
+	width: 300px;
+	height: 55px;
+	background-color: $green;
+	color: #fff;
+	text-align: center;
+	padding-top: 17px;
+	a{
+		color: #fff;
+		transition: all 0.3s;
+		&:hover{
+			color: #cdd2c0;
+		}
+	}
+}
+.header_title{
+	width: 100%;
+	//max-height: 200px;
+	display: flex;
+	justify-content: center;
+	margin-top: 150px;
+	.title_text{
+		font-size: 100px;
+		color: #fff;
+		font-weight: 600;
+		line-height: 150px;
+		width: 380px;
+	}
+	
+}
+.header_text{
+	width: 100%;
+	//max-height: 200px;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	.text_wrap{
+		font-size: 36px;
+		line-height: 38px;
+		font-weight: 600;
+		color: #fff;
+	}
+}
